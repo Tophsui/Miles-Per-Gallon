@@ -2,14 +2,21 @@
 using namespace std;
 
 int main() {
-    // Constants
-    const double GALLONS_OF_GAS = 15.0;
-    const double MILES_DRIVEN = 375.0;
+    // Variables for user input
+    double gallonsOfGas;
+    double milesDriven;
+
+    // Get input from user
+    cout << "Enter the number of gallons of gas used: ";
+    cin >> gallonsOfGas;
+
+    cout << "Enter the number of miles driven: ";
+    cin >> milesDriven;
 
     // Calculate MPG
-    double mpg = MILES_DRIVEN / GALLONS_OF_GAS;
+    double mpg = milesDriven / gallonsOfGas;
 
-    // Display the result
+    // Output the result
     cout << "The car gets " << mpg << " miles per gallon." << endl;
 
     return 0;
